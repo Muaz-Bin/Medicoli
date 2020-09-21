@@ -1,0 +1,97 @@
+@media (max-width:991px){
+    header .sticky-menu .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+        padding: 18px 10px;
+      }
+
+      #doctors .single-doctor .doctor-info h3 {
+        font-size: 22px;
+      }
+      #doctors .single-doctor .doctor-info p {
+        font-size: 15px;
+      }
+}
+
+@media (max-width:767px){
+  header .navbar .navbar-toggler {
+    height: 40px;
+    width: 50px;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  header .navbar .navbar-toggler .navigation-icon {
+    height: 2px;
+    width: 20px;
+    border-radius: 5px;
+    background: #ef3e78;
+    display: flex;
+    transition:all .5s ease-in-out;
+  }
+  header .navbar .navbar-toggler .navigation-icon::after,
+  header .navbar .navbar-toggler .navigation-icon::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
+    background: #ef3e78;
+    transition:all .5s ease-in-out;
+  }
+  header .navbar .navbar-toggler .navigation-icon:before{
+    transform: translateY(-8px);
+  }
+  header .navbar .navbar-toggler .navigation-icon:after{
+    transform: translateY(8px);
+  }
+  /* animation */
+  header .navbar .navbar-toggler.open .navigation-icon{
+    background: transparent;
+    transform: translateX(-45px);
+  }
+  header .navbar .navbar-toggler.open .navigation-icon::before {
+    transform:rotate(45deg) translate(30px,-30px);
+  }
+  header .navbar .navbar-toggler.open .navigation-icon::after {
+    transform:rotate(-45deg) translate(30px,30px);
+  }
+
+
+
+
+  header .sticky-menu .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 19px;
+    border-top: none;
+    padding: 10px 0;
+  }
+  header .hero-area .slider-content h2 {
+    font-size: 25px;
+  }
+  header .hero-area .slider-content h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .section-heading h2, .section-heading-2 h2 {
+    font-size: 30px;
+  }
+
+  #prevention .single-item h2 {
+    font-size: 25px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .icons .single-address {
+    display: inline-block;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:576px){
+  #scrollToTop{
+    right: 30px;
+    bottom: 60px;
+  }
+}
